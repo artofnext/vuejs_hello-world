@@ -6,8 +6,8 @@
         </form>
         <ul class="list">
             <li v-for="(value, key) in componentArray" v-bind:key="key">
-                <p>{{ key }}</p> 
-                <p>{{ value }}</p> 
+                {{ key }} - 
+                {{ value }}
             </li>
         </ul>
     </div>
@@ -28,7 +28,7 @@ export default {
     methods: {
         addToArray() {
             // let value = this.newValue;
-            console.log('todoArray: ');
+            // console.log('todoArray: ');
             // console.log(value);
             this.componentArray.push(this.newValue);
         },
